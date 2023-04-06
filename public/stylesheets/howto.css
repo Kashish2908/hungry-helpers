@@ -16,8 +16,10 @@ body {
 }
 
 #howto-content {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #howto-heading {
@@ -33,7 +35,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
-  letter-spacing: .2vw;
+  letter-spacing: 0.2vw;
   line-height: 20px;
 }
 
@@ -62,4 +64,77 @@ body {
   top: 3.5vh;
 }
 
+#sub-heading {
+  position: absolute;
+  margin-top: 25vh;
+  left: 30px;
+}
 
+#sub-heading h3 {
+  text-transform: capitalize;
+  font-family: raleway;
+  font-weight: 700;
+}
+
+#sub-heading i {
+  font-size: 1.5em;
+}
+
+#organization-content{
+  margin-top: -10vh;
+}
+
+#thumbnail-section {
+  height: 50vh;
+  width: 100%;
+  margin-top: 30vh;
+  padding: 5vh 4vw;
+}
+
+#cards {
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  cursor: pointer;
+}
+
+.card {
+  height: 58vh;
+  width: 23vw;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 5px 10px 10px rgba(219,210,219,0.67);
+}
+
+.card h4 {
+  white-space: nowrap;
+  font-family: raleway;
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+}
+
+.card .card-img {
+  height: 38vh;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.card .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .card-deet {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: raleway;
+  font-size: 0.9rem;
+}

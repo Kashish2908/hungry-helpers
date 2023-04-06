@@ -10,6 +10,13 @@ body {
   width: 100%;
 }
 
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   display: none;
+}
+
+#border {
+  margin-left: 5vh;
+  margin-right: 5vh;
+  width: 95%;
+  border: 1px solid rgba(82, 78, 78, 0.231);
 }
