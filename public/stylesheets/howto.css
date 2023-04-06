@@ -107,7 +107,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1px 5px 10px 10px rgba(219,210,219,0.67);
+  box-shadow: 1px 5px 8px 10px rgba(219,210,219,0.67);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
 .card h4 {
@@ -124,6 +125,7 @@ body {
   border-radius: 5px;
   margin-top: 1rem;
   overflow: hidden;
+  border: .5px solid #efeded;
 }
 
 .card .card-img img {
@@ -139,4 +141,17 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   color: #000;
+}
+
+/* hover part */
+
+.card:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  background-color: #9a9a9a27;
+}
+
+.card:hover .card-img img{
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
