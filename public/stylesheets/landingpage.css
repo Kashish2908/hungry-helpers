@@ -13,7 +13,7 @@
   }
 
   
- html,body {
+html,body {
     height: 100%;
     width: 100%;
 }
@@ -38,6 +38,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    z-index: 999;
 }
 #text{
     padding: 40px;
