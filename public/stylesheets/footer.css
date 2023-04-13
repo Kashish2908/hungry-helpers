@@ -1,16 +1,150 @@
 @font-face {
-    font-family: raleway;
-    src: url(../assets/font/static/Raleway-Regular.ttf);
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-  }
+  font-family: raleway;
+  src: url(../assets/font/static/Raleway-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#footer-content {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  background-color: #616161;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-to-top {
+  background-color: #ddddde;
+  color: #000;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40%;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+#back-to-top span{
+  /* background-color: red; */
+  font-weight: bold;
+  font-family: raleway;
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+
+#back-to-top i{
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+#media-icons{
+  font-size: 1.3em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#media-icons i{
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+#created-with-content{
+  width: 20%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #B2F1EA;
+  top: 65%;
+}
+
+#created-with-content h3, #last-content h3{
+  font-family: raleway;
+  font-size: .9em;
+  word-spacing: .1em;
+  letter-spacing: .1em;
+  font-weight: 200;
+}
+
+
+#created-with-content i, #last-content i{
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+
+.heart{
+  color: #F17784;
+}
+
+.cup{
+  color: #E0A45C;
+}
+
+.spotify{
+  color: #47D86A;
+}
+
+#last-content{
+  width: 18%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #B2F1EA;
+  bottom: 6%;
+}
+
+.eye{
+  color: #ddddde;
+}
+
+.git{
+  color: #E0E890
+}
+
+
+
+/* hover part */
+
+#back-to-top:hover{
+  background-color: #cccccfca;
+}
+
+#fb-icon:hover .fb{
+  color: #3b5998;
+}
+
+#pin-icon:hover .pin{
+  color: #c8232c;
+}
+
+#tweet-icon:hover .tweet{
+  color: #00acee;
+}
+
+#linkd-icon:hover .linkd{
+  color: #0A66C2;
+}

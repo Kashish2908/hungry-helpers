@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>footer</title>
+    <link rel="stylesheet" href="../stylesheets/footer.css">
 </head>
+
 <body>
+    <div id="footer-content">
+        <button id="back-to-top" onclick="topFunction()">
+            <i class="ri-arrow-up-line"></i>
+            <span>back to top</span>
+        </button>
+
+        <!-- social media icons -->
+        <div id="media-icons">
+            <a id="fb-icon" href=""><i class="ri-facebook-fill fb"></i></a>
+            <a id="pin-icon"  href=""><i class="ri-pinterest-fill pin"></i></a>
+            <a id="tweet-icon" href=""><i class="ri-twitter-fill tweet"></i></a>
+            <a id="linkd-icon" href=""><i class="ri-linkedin-fill linkd"></i></a>
+        </div>
+
+
+        <div id="created-with-content">
+            <h3>Created with lots of</h3>
+            <i class="ri-heart-3-fill heart"></i>
+            <i class="ri-cup-fill cup"></i>
+            <h3>and</h3>
+            <i class="ri-spotify-fill spotify"></i>
+        </div>
+
+        <div id="last-content">
+            <h3> Wanna</h3>
+            <i class="ri-eye-fill eye"></i>
+            <h3> more? Checkout my</h3>
+            <i class="ri-github-fill git"></i>
+        </div>
+    </div>
+
     
+
+    <!-- js part -->
+<script>
+    let button = document.querySelector("#back-to-top");
+
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
+
 </html>
