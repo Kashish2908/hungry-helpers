@@ -42,9 +42,8 @@
                  <a id="register" onclick="registermodalopen()" href="#"><h3> <i class="ri-book-2-fill"></i> REGISTER</h3></a>
                     
                     <a id="login" onclick="loginmodalopen()" href="#"><h3><i class="ri-user-3-fill"></i> LOG IN</h3></a>
-                 <h3> <i class="ri-settings-3-fill"></i> HOW TO</h3>
-                    <h3> <i class="ri-contacts-book-fill"></i> CONTACT</h3>
-
+                     <a href="#howto-content"><h3> <i class="ri-settings-3-fill"></i> HOW TO</h3></a>
+                    <a href="#contact-form"><h3> <i class="ri-contacts-book-fill"></i> CONTACT</h3></a>
                 </div>
                  
             </div>
@@ -59,7 +58,7 @@
     <script>
         function registermodalopen(){
             document.querySelector("#register-modal").style.display = "block"
-            document.querySelector("#landing-page").style.opacity = .5   
+            document.querySelector("#landing-page").style.opacity = .3  
         }
         function registermodalclose(){
             document.querySelector("#register-modal").style.display = "none"
@@ -67,7 +66,7 @@
         }
         function loginmodalopen(){
             document.querySelector("#login-modal").style.display = "block"
-            document.querySelector("#landing-page").style.opacity = .5   
+            document.querySelector("#landing-page").style.opacity = .3   
         }
         function loginmodalclose(){
             document.querySelector("#login-modal").style.display = "none"
