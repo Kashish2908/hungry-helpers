@@ -40,7 +40,7 @@ html,body {
     padding: 30px;
     z-index: 999;
 }
-#register{
+#navright a{
     color: rgba(89, 90, 90, 0.993);
 }
 #register-modal{
@@ -53,8 +53,9 @@ html,body {
     background-color: white;
     z-index: 99999;
     font-family: raleway;
-    opacity: 0;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    /* opacity: 0; */
+    display: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
 }
 #register-modal h2{
     position: absolute;
@@ -84,7 +85,7 @@ html,body {
     top: 13vh;
     right: 5%;
 }
-#register-modal-submit{
+#registercancel{
     width: 18%;
     height: 7vh;
     background-color: rgb(133, 33, 33);
@@ -96,6 +97,68 @@ html,body {
     left: 50%;
     transform: translate(-50%,-50%);
 
+}
+#login-modal{
+    width: 40%;
+    height: 70vh;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 99999;
+    font-family: raleway;
+    padding:30px 35px;
+    display: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+}
+#login-modal a{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: black;
+}
+#logincancel{
+    width: 18%;
+    height: 7vh;
+    background-color: rgb(133, 33, 33);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+
+}
+#loginbutton{
+    width: 90%;
+    height: 7vh;
+    position: absolute;
+    bottom: 120px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    left: 30px;
+    font-family: raleway-bold;
+}
+#loginclose{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-weight: 900;
+    color: black;
+}
+#login-modal input{
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-top: 20px;
+    width: 100%;
+}
+#login-modal h2{
+    margin-top: 30px;
 }
 #text{
     padding: 40px;

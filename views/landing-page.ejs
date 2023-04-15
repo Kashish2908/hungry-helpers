@@ -15,9 +15,20 @@
             <h2>What are you registering as ?</h2>  
             <button id="restaurants">Restaurants / Establishments</button>
             <button id="ngo">Organizations/NGOs</button>
-            <button onclick="modalclose()" id="register-modal-submit" type="submit">Cancel</button>
-
+            <button onclick="registermodalclose()" id="registercancel" type="submit">Cancel</button>
       </div>
+      <div id="login-modal">
+       <a id="loginclose" href=""><i class="ri-close-line"></i></a>
+            <h2>Username</h2>
+            <input type="text" placeholder="Enter Username">
+            <h2>Password</h2>
+        <input type="text" placeholder="Enter Password">
+        <button id="loginbutton" type="submit">Log in</button>
+        <button onclick="loginmodalclose()" id="logincancel" type="submit">Cancel</button>
+        <a href=""><h3>Forgot password ?</h3></a>
+         
+      </div>
+
         <div id="landing-page">
            
             <div id="navbar">
@@ -28,11 +39,10 @@
                 <div id="navright">
                    
 
-                 <a id="register" onclick="modalopen()" href="#register"><h3> <i class="ri-book-2-fill"></i> REGISTER</h3></a>
+                 <a id="register" onclick="registermodalopen()" href="#"><h3> <i class="ri-book-2-fill"></i> REGISTER</h3></a>
                     
-                    
-                    <h3><i class="ri-user-3-fill"></i> LOG IN</h3>
-                    <h3> <i class="ri-settings-3-fill"></i> HOW TO</h3>
+                    <a id="login" onclick="loginmodalopen()" href="#"><h3><i class="ri-user-3-fill"></i> LOG IN</h3></a>
+                 <h3> <i class="ri-settings-3-fill"></i> HOW TO</h3>
                     <h3> <i class="ri-contacts-book-fill"></i> CONTACT</h3>
 
                 </div>
@@ -47,19 +57,22 @@
         </div>
     </div>
     <script>
-        function modalopen(){
-            document.querySelector("#register-modal").style.opacity = 1
-            document.querySelector("#landing-page").style.opacity = .5
-
-            
+        function registermodalopen(){
+            document.querySelector("#register-modal").style.display = "block"
+            document.querySelector("#landing-page").style.opacity = .5   
         }
-        function modalclose(){
-            document.querySelector("#register-modal").style.opacity = 0
-            document.querySelector("#landing-page").style.opacity = 1
-
-            
+        function registermodalclose(){
+            document.querySelector("#register-modal").style.display = "none"
+            document.querySelector("#landing-page").style.opacity = 1   
         }
-        
+        function loginmodalopen(){
+            document.querySelector("#login-modal").style.display = "block"
+            document.querySelector("#landing-page").style.opacity = .5   
+        }
+        function loginmodalclose(){
+            document.querySelector("#login-modal").style.display = "none"
+            document.querySelector("#landing-page").style.opacity = 1   
+        }
     </script>
 </body>
 </html>
